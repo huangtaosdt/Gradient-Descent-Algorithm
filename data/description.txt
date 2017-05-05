@@ -1,0 +1,5 @@
+We have a dataset pga.csv containing professional golfers' driving statistics in two columns, accuracy and distance. Accuracy is measured as the percentage of fairways hit over many drives. Distances is measured as the average drive distance, in yards. Our goal is to predict accuracy using distance. In golf, it's expected that the further someone hits the ball the less accurate they will be. Lets see if this holds up.
+
+For many machine learning algorithms it's important to scale, or normalize, the data before using it. Here we have distance, measured in yards, and accuracy, measured in percentages. These two fields are on very different scales which can produce bias into learning algorithms. Many algorithms compute the Eucilidean Distance between two observations and if one of the features is vastly larger than another, the distance will be biased towards that particular feature. To normalize the data, for each value, subtract each the mean and then divide by the standard deviation.
+
+After normalizing the data, we plot the data to get a visual sense of the data.
